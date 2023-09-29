@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Libre:wght@300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0 ;
+    box-sizing: border-box;
+      }
+
+
+
+/*(encabezado)*/
+#logoSolem{
+    width: 400px;
+    height: 100px;
+       }
+
+
+.todos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;  
+      }
+
+      /*(NAVEGACION)*/
+      
+#listas{
+    
+     left: 220px;
+     width: 700px;
+     font-family: Averia Libre;
+     
+      }
+
+ul{
+    list-style: none;
+    
+     }
+
+li{
+    display: inline-block;
+    padding: 40px 40px;
+    font-size: x-large;
+ 
+    }
+
+a{
+    text-decoration: none;
+    color: black;
+    font-family: Averia Libre;
+}
+
+a:hover{
+    text-decoration: underline;
+        
+}
+
+
+/*(fotoSection)*/    
+.fotoHome{
+    height: 90%;
+    width: 75vw;
+    margin-bottom: 15px;
+  }
+
+
+.padreFoto{
+    display: flex;
+    justify-content: center;
+}  
+
+
+/*(foooter)*/
+.pie{
+    grid-area: footer;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    width: 100%;
+    background-image: url(../assets/images/textura_footer.jpg);
+}     
+
+
+H1{
+    font-size: large;
+    padding-top: 30px;
+    font-family: Averia Libre;
+    text-align: center;
+}
+
+#insta{
+    width: 55px;
+    height: 55px;
+}            
+
+.logosSocial{
+    height: 50px;
+    width: 50px;
+            }
+
+   
+#sectionMedia{
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+     }  
+
+.videoRESP{
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+ }
+
+.videoRESP iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+} 
+
+#tituloMedia{
+    margin:15px;
+}
+
+.tamano_foto{
+    width: 200px;
+    height: 200px;
+    }
+
+#titulosnav{
+    margin-left: 217px;
+    margin-bottom: 30px;
+}    
+
+.letraTitulos{
+    font-family: Averia Libre;
+    font-size: xx-large;
+}       
+  
+.imgEntrev{
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display:inline-block;
+}
+
+/*(Noticias CARDS)*/
+
+.bootcards{
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 20px;
+}
+
+#tituloNoticias{
+    display:flex;
+    justify-content: center;
+   }
+
+
+
