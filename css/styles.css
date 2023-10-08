@@ -50,11 +50,11 @@ a{
     font-family: Averia Libre;
 }
 
-header a:hover{
-    text-decoration: underline;
-        
-}
 
+#hovernav:hover{
+    text-decoration: underline;
+    rotate: 3deg;
+}
 
 /*(fotoSection)*/    
 .fotoHome{
@@ -64,7 +64,10 @@ header a:hover{
     margin-top: 10px;
   }
 
-
+.imagen_index{
+    display: flex;
+    justify-content: center;
+}
 .padreFoto{
     display: flex;
     justify-content: center;
@@ -202,7 +205,9 @@ H1{
     justify-content: center;
    }
 
-
+.tamano_foto:hover{
+    filter: contrast(50%)
+}
 /*(EP)*/
 
 .div_Fotos_Ep{
