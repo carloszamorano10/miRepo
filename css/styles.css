@@ -61,6 +61,7 @@ header a:hover{
     height: 90%;
     width: 75vw;
     margin-bottom: 15px;
+    margin-top: 10px;
   }
 
 
@@ -78,8 +79,8 @@ header a:hover{
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 100%;
-    background-image: url(../assets/images/textura_footer.jpg);
+    width: 100vw;
+    background-image: url(../assets/images/textura_footer.webp);
 }     
 
 
@@ -202,4 +203,99 @@ H1{
    }
 
 
+/*(EP)*/
 
+.div_Fotos_Ep{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 50px;
+}
+
+@media(min-width: 800px){
+    .div_Fotos_Ep{
+        flex-direction: row;
+    }
+}
+
+.fotos_Ep{
+    width: 450px;
+}
+.fotos_Ep:hover{
+    filter: blur(5px);
+}
+
+.Titulos_EP{
+    display: flex;
+    flex-direction: column;
+    font-family: Averia Libre
+}
+
+#encabezado_texto_ep{
+    text-align: center;
+}
+
+/*(Integrantes)*/
+
+.fotos_integrantes{
+    width: 250px;
+}
+#cotofoto{
+    height: 384px;
+}
+
+.cont_grid{
+    display: grid;
+    justify-items: center;
+    grid-template-areas: 
+     "leo"
+     "charly"
+     "diego"
+     "coto";
+     grid-template-columns: 1fr;
+     grid-template-rows: auto auto auto auto;
+     margin-top: 20px;
+     margin-bottom: 20px;
+}
+
+.Cards_integrantes{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+#leo{
+    grid-area: leo;
+}
+#charly{
+    grid-area: charly;
+}
+#diego{
+    grid-area: diego;
+}
+#coto{
+    grid-area: coto;
+}
+.titulos_integ{
+    display: flex;
+    flex-direction: column;
+    font-family: Averia Libre;
+    align-items: center;
+}
+@media(min-width: 800px){
+    .cont_grid{
+        grid-template-areas: 
+         "leo charly"
+         "diego coto";
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+    }
+   }
+
+@media(min-width: 1000px){
+    .cont_grid{
+        grid-template-areas: 
+         "leo charly diego coto";
+         grid-template-columns: 1fr 1fr 1fr 1fr;
+         grid-template-rows: 1fr;
+    }
+}
