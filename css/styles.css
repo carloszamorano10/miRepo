@@ -82,7 +82,7 @@ a{
     align-items: center;
     justify-content: center;
     height: 200px;
-    width: 100vw;
+    width: auto;
     background-image: url(../assets/images/textura_footer.webp);
 }     
 
