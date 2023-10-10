@@ -6,7 +6,7 @@
     <link rel="shortcut icon" href="../assets/images/sonidoFav.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Solem EP</title>
+    <title>Solem Contacto</title>
 </head>
 <body>
    <header>
@@ -38,8 +38,8 @@
                   <a class="nav-link" id="hovernav" href="../pages/noticias.html">Noticias</a>
                 </li>
                 <li class="nav-item dropdown">
-                  <a class="nav-link" id="hovernav" href="../pages/contactos.html">Contacto</a>
-              </li>
+                    <a class="nav-link" id="hovernav" href="../pages/contactos.html">Contacto</a>
+                </li>
               </ul>
             </div>
           </div>
@@ -50,33 +50,32 @@
    </header>
 
    
-  <section>
-     
-    <h1 class="letraTitulos" id="tituloNoticias">Ep</h1>
+    <section>
+        
+     <!--Contactos Banda-->
+       <div class="cont_fotoContacto">
+        <img class="foto_contacto" src="../assets/images/largo_rojo_contactos.webp" alt="Imagen banda interior fondo luz roja">
+       </div>  
+       <h1 class="titulo_contacto">Contacto</h1>
+       
+       <div class="flex_contactos">
 
-<!--PORTADA EP-->
+           <form action="#" method="get">
+              <input class="tamaño_input" type="text" name="Nombre" placeholder="Nombre"><br>
+              <input class="tamaño_input" type="email" name="Correo" placeholder="Correo"> <br>
+              <input class="tamaño_input" type="text" name="Asunto" placeholder="Asunto"> <br>            
+              <textarea class="tamaño_input" name="Comentario" id="Comentario" placeholder="Comentario" cols="40" rows="8"></textarea> <br>
+              <div class="botones">
+                  <input class="color_botones" type="reset" value="Borrar">
+                  <input class="color_botones" type="submit" value="Enviar!">
+              </div>
+           </form>
 
-     <div class="div_Fotos_Ep">
-        <a href="https://open.spotify.com/track/0Sibvmm3P1OW5onfgoIRah?si=70d0e377dd03440e">
-            <img class="fotos_Ep" src="../assets/images/Desaparecer.webp" alt="Portada Ep Desaparecer">
-        </a>
-         <div class="Titulos_EP">
-            <h3 id="encabezado_texto_ep">Desaparecer</h3>
-            <h4>Sello Sinusoide Chile 2022</h4>
-          </div>
-      </div>
+           <iframe class="mapa_contacto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.7700842789554!2d-70.66834232487584!3d-33.455296097759344!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662d05ff1884095%3A0xd6595e7ff3081acc!2sSinusoide%20Estudio!5e0!3m2!1ses-419!2scl!4v1696955388469!5m2!1ses-419!2scl" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
-     <div class="div_Fotos_Ep">
-        <a href="https://open.spotify.com/track/5IkGcsZpaF9DR9amp0WG9l?si=3d1f2cd340be477c">
-            <img class="fotos_Ep" src="../assets/images/plano fisico.webp" alt="Portada Ep Plano Físico">
-        </a>
-         <div class="Titulos_EP">
-            <h3 id="encabezado_texto_ep">Plano Físico</h3>
-            <h4>Sello Sinusoide Chile 2022</h4>
-          </div>
-      </div>
-     
-    </section>
+         </div>
+
+     </section>
 
 
     <footer>
@@ -85,9 +84,9 @@
 
       <div class="pie">  
         <div class="sociales">
-          <a href="../pages/contactos.html">
-            <i class="fa-regular fa-envelope fa-3x"></i>
-          </a>
+            <a href="../pages/contactos.html">
+                <i class="fa-regular fa-envelope fa-3x"></i>
+            </a>
           <a href="https://www.instagram.com/solemoficial/">
             <i class="fa-brands fa-instagram fa-3x"></i>
           </a>
