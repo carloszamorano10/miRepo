@@ -69,6 +69,32 @@ a{
     rotate: 3deg;
 }
 
+section{
+    background-image: linear-gradient(to top, white, lightgrey);
+}
+
+/*(Media video)*/ 
+.cont_youtube{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.youtube{
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56%;
+}
+
+.youtube iframe{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.youtube{
+    margin: 30px;
+}
+
+
 /*(fotoSection)*/    
 .fotoHome{
     height: 90%;
@@ -113,26 +139,7 @@ H1{
     
 }            
   
-#sectionMedia{
-    display: flex;
-    flex-direction: column;
-    margin: 30px;
-     }  
 
-.videoRESP{
-    position: relative;
-    overflow: hidden;
-    padding-top: 56.25%;
- }
-
-.videoRESP iframe{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-
-} 
 
 #tituloMedia{
     margin:15px;
