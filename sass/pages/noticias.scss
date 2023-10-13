@@ -1,12 +1,7 @@
 .letraTitulos{
-    font-family: Averia Libre;
+    font-family: $fontfamily;
     font-size: xx-large;
 }      
-
-.tamano_foto{
-    width: 200px;
-    height: 200px;
-    }
 
     #noticias_card{
         display: grid;
@@ -55,13 +50,16 @@
     }
     
     #tituloNoticias{
-        display:flex;
+        @include flex-direccion(row);
         justify-content: center;
        }
     
-    .tamano_foto:hover{
-        filter: contrast(50%)
-    }
     .tamano_foto{
         border-radius: 4px;
+        width: 200px;
+        height: 200px;
+
+        &:hover{
+            filter: contrast(50%)
+        }
     }   

@@ -5,12 +5,12 @@
     box-sizing: border-box;
       }
 
-header{
+header { 
     #logoSolem{
         width: 400px;
         height: 100px;
            } 
-           
+
         ul{
             list-style: none;
             
@@ -20,13 +20,18 @@ header{
             display: inline-block;
             padding: 40px 40px;
             font-size: x-large;
-         
+
+            a:hover{
+                text-decoration: underline;
+                rotate: 3deg;}
             }
-        
-        
+         
+                          
         a{
             text-decoration: none;
-            font-family: Averia Libre;
+            font-family: $fontfamily;
             color: black;
-        }       
-}      
+             }
+
+     }     
+  

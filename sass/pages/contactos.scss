@@ -1,39 +1,38 @@
 .cont_fotoContacto{
-    display: flex;
+    @include flex-direccion(row);
     justify-content: center;
 }
+
 .foto_contacto{
     width: 55vw;
     height: 150px;
     border-radius: 10px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: $sombra;
 }
 form{
-    display: flex;
-    flex-direction: column;
+    @include flex-direccion(column);
     align-items: center;
     border-radius: 10px;
-    border: solid lightseagreen 2px;
+    border: solid $colorFormularioA 2px;
     width: 325px;
-    background-color: lightcyan;
+    background-color: $colorFormularioB;
     padding: 10px;
     margin-bottom: 30px;
     
 }
 .botones{
-    width: 100%;
-    display: flex;
+    width: $ancho;
+    @include flex-direccion(row);
     justify-content: space-evenly;
-    font-family: Averia Libre;
+    font-family: $fontfamily;
 }
 
 .tamaño_input{
     width: 300px;
-    font-family: Averia Libre;
+    font-family: $fontfamily;
  }
 .flex_contactos{
-    display: flex;
-    flex-direction: column;
+    @include flex-direccion(column);
     align-items: center;
     margin-bottom: 40px;
     margin-top: 30px;
@@ -54,8 +53,7 @@ form{
         height: 250px;
     }
     .flex_contactos{
-        display: flex;
-        flex-direction: row;
+        @include flex-direccion(row);
         justify-content: space-evenly;
         margin-bottom: 40px;
         margin-top: 30px;

@@ -1,12 +1,12 @@
 .fotos_integrantes{
     width: 250px;
     border-radius: 5px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: $sombra;
     transition: 40ms ease;
 }
 
 .fotos_integrantes:hover{
-    box-shadow: 5px 5px 20px rgba(0,0,0,0.6);
+    box-shadow: $sombrahover;
 }
 
 
@@ -46,9 +46,8 @@
     grid-area: coto;
 }
 .titulos_integ{
-    display: flex;
-    flex-direction: column;
-    font-family: Averia Libre;
+    @include flex-direccion(column);
+    font-family: $fontfamily;
     align-items: center;
 }
 @media(min-width: 800px){

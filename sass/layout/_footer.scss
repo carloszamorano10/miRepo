@@ -1,8 +1,7 @@
 footer{
     .pie{
         grid-area: footer;
-        display:flex;
-        flex-direction: column;
+        @include flex-direccion(column);
         align-items: center;
         justify-content: center;
         height: 200px;
@@ -10,25 +9,17 @@ footer{
         background-image: url(../assets/images/textura_footer.webp);
     }     
     .sociales{
-        display:flex;
+        @include flex-direccion(row);
         justify-content: space-evenly;
         width: 25vw;
     }
-    
     .sociales a i{
         transition: transform 0.5s;
-    }
-    .sociales a i:hover{
-        transform: scale(1.5);
-        text-shadow: 10px 4px 10px white;
-    }
-    
-    #hovernav:hover{
-        text-decoration: underline;
-        rotate: 3deg;
-    }
-    i{
         color: black;
-    }
-
+        &:hover{
+           transform: scale(1.5);
+           text-shadow: 10px 4px 10px white;
+             }
+    
+       }
 }

@@ -1,6 +1,5 @@
 .div_Fotos_Ep{
-    display: flex;
-    flex-direction: column;
+    @include flex-direccion(column);
     align-items: center;
     justify-content: space-evenly;
     margin: 50px;
@@ -15,16 +14,15 @@
 .fotos_Ep{
     width: 450px;
     border-radius: 4px;
-    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+    box-shadow: $sombra;
 }
 .fotos_Ep:hover{
     filter: blur(5px);
 }
 
 .Titulos_EP{
-    display: flex;
-    flex-direction: column;
-    font-family: Averia Libre
+    @include flex-direccion(column);
+    font-family: $fontfamily;
 }
 
 #encabezado_texto_ep{
