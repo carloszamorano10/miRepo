@@ -6,10 +6,6 @@
     box-sizing: border-box;
       }
 
-
-
-
-
 /*(NAVEGACION)*/
 
 #logoSolem{
@@ -17,13 +13,6 @@
     height: 100px;
        }
 
-#listas{
-    
-     left: 220px;
-     width: 700px;
-     font-family: Averia Libre;
-     
-      }
 
 ul{
     list-style: none;
@@ -37,11 +26,14 @@ li{
  
     }
 
+
 a{
     text-decoration: none;
     font-family: Averia Libre;
     color: black;
 }
+
+/*(Contacto)*/
 
 .sociales{
     display:flex;
@@ -102,11 +94,7 @@ section{
     display: flex;
     justify-content: center;
 }
-.padreFoto{
-    display: flex;
-    justify-content: center;
-}  
-
+ 
 
 /*(foooter)*/
 .pie{
@@ -120,7 +108,7 @@ section{
     background-image: url(../assets/images/textura_footer.webp);
 }     
 
-
+/*(titulos)*/
 H1{
     font-size: large;
     padding-top: 30px;
@@ -128,14 +116,8 @@ H1{
     text-align: center;
 }
 
-#insta{
-    width: 55px;
-    height: 55px;
-    
-}            
   
-
-
+/*(noticias)*/
 #tituloMedia{
     margin:15px;
 }
@@ -145,22 +127,12 @@ H1{
     height: 200px;
     }
 
-#titulosnav{
-    margin-left: 217px;
-    margin-bottom: 30px;
-}    
 
 .letraTitulos{
     font-family: Averia Libre;
     font-size: xx-large;
 }       
-  
-.imgEntrev{
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    display:inline-block;
-}
+
 
 /*(Noticias CARDS)*/
 
