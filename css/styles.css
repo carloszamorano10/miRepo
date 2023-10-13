@@ -190,6 +190,9 @@ H1{
 .tamano_foto:hover{
     filter: contrast(50%)
 }
+.tamano_foto{
+    border-radius: 4px;
+}
 /*(EP)*/
 
 .div_Fotos_Ep{
@@ -208,6 +211,7 @@ H1{
 
 .fotos_Ep{
     width: 450px;
+    border-radius: 4px;
 }
 .fotos_Ep:hover{
     filter: blur(5px);
