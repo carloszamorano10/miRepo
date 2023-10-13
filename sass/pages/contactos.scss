@@ -1,0 +1,77 @@
+.cont_fotoContacto{
+    display: flex;
+    justify-content: center;
+}
+.foto_contacto{
+    width: 55vw;
+    height: 150px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+}
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    border: solid lightseagreen 2px;
+    width: 325px;
+    background-color: lightcyan;
+    padding: 10px;
+    margin-bottom: 30px;
+    
+}
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    font-family: Averia Libre;
+}
+
+.tamaño_input{
+    width: 300px;
+    font-family: Averia Libre;
+ }
+.flex_contactos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.titulo_contacto{
+    font-size: 2em;
+}
+
+@media(min-width: 650px){
+    .foto_contacto{
+        width: 60vw;
+        height: 200px;
+    }
+}
+@media(min-width: 900px){
+    .foto_contacto{
+        width: 60vw;
+        height: 250px;
+    }
+    .flex_contactos{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-bottom: 40px;
+        margin-top: 30px;
+    }
+    .mapa_contacto{
+        width: 450px;
+        height: 300px;
+    }
+}
+@media(min-width: 1000px){
+    .foto_contacto{
+        width: 70vw;
+        height: 360px;
+    }
+    .mapa_contacto{
+        width: 520px;
+        height: 370px;
+    }
+ }
