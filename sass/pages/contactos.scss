@@ -1,11 +1,12 @@
 .cont_fotoContacto{
     @include flex-direccion(row);
     justify-content: center;
-}
+    padding-top: 10px;
+    }
 
 .foto_contacto{
-    width: 55vw;
-    height: 150px;
+    width: 180px;
+    height: 80px;
     border-radius: 10px;
     box-shadow: $sombra;
 }
@@ -14,10 +15,21 @@ form{
     align-items: center;
     border-radius: 10px;
     border: solid $colorFormularioA 2px;
-    width: 325px;
+    width: 225px;
     background-color: $colorFormularioB;
     padding: 10px;
     margin-bottom: 30px;
+    @media(min-width: 450px){
+        &{
+           width: 325px;
+        }
+    }
+    @media(min-width: 550px){
+        &{
+           width: 300px;
+        }
+    }
+    
     
 }
 .botones{
@@ -28,14 +40,57 @@ form{
 }
 
 .tamaño_input{
-    width: 300px;
+    width: 200px;
     font-family: $fontfamily;
+    @media(min-width: 450px){
+        &{
+           width: 260px;
+        }
+    }
  }
 .flex_contactos{
     @include flex-direccion(column);
     align-items: center;
     margin-bottom: 40px;
     margin-top: 30px;
+    iframe{
+        @media(min-width: 400px){
+            &{
+                width: 330px;
+                height: 180px;
+            }
+        }
+        @media(min-width: 500px){
+            &{
+                width: 370px;
+                height: 210px;
+            }
+        }
+        @media(min-width: 600px){
+            &{
+                width: 410px;
+                height: 250px;
+            }
+        }
+        @media(min-width: 700px){
+            &{
+                width: 450px;
+                height: 290px;
+            }
+        }
+        @media(min-width: 800px){
+            &{
+                width: 490px;
+                height: 330px;
+            }
+        }
+        @media(min-width: 1000px){
+            &{
+                width: 540px;
+                height: 380px;
+            }
+        }
+    }
 }
 .titulo_contacto{
     font-size: 2em;

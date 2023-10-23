@@ -1,15 +1,27 @@
-.letraTitulos{
-    font-family: $fontfamily;
-    font-size: xx-large;
-}      
 
+    .letraTitulos{
+        font-family: $fontfamily;
+        font-size: 1.5rem;
+        @media(min-width: 600px){
+            &{
+                font-size: 1.7rem;
+            }
+        }
+        @media(min-width: 800px){
+            &{
+                font-size: 1.8rem;
+            }
+        }
+    }      
+    
+    
     #noticias_card{
         display: grid;
         grid-template-areas:
-         "link1"
-         "link2"
-         "link3"
-         "link4";
+        "link1"
+        "link2"
+        "link3"
+        "link4";
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr; 
     }
@@ -30,8 +42,8 @@
     @media(min-width: 800px){
         #noticias_card{
             grid-template-areas:
-             "link1 link2"
-             "link3 link4";
+            "link1 link2"
+            "link3 link4";
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr; 
             margin-bottom: 50px;
@@ -48,11 +60,12 @@
             margin-top: 50px;
         }
     }
-    
     #tituloNoticias{
         @include flex-direccion(row);
         justify-content: center;
        }
+
+    
     
     .tamano_foto{
         border-radius: 4px;

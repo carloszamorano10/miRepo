@@ -7,9 +7,34 @@
 
 header { 
     #logoSolem{
-        width: 400px;
-        height: 100px;
+        width: 80px;
+        height: 30px;
+        
            } 
+           @media(min-width: 300px){
+             #logoSolem{
+                width: 150px;
+                height: 50px;
+                   } 
+                 } 
+            @media(min-width: 500px){
+               #logoSolem{
+                 width: 250px;
+                 height: 80px;
+                        } 
+                  }
+            @media(min-width: 700px){
+               #logoSolem{
+                 width: 300px;
+                 height: 90px;
+                      } 
+                    }
+            @media(min-width: 1000px){
+                #logoSolem{
+                  width: 330px;
+                  height: 100px;
+                         } 
+                      }                           
 
         ul{
             list-style: none;
@@ -32,6 +57,8 @@ header {
             font-family: $fontfamily;
             color: black;
              }
+            }     
 
-     }     
+
   
+        

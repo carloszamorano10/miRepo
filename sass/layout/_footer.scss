@@ -1,25 +1,64 @@
 footer{
     .pie{
-        grid-area: footer;
+        
         @include flex-direccion(column);
         align-items: center;
         justify-content: center;
-        height: 200px;
+        height: 20vh;
         width: auto;
         background-image: url(../assets/images/textura_footer.webp);
+        h1{
+            font-size: 10px;
+            padding: 5px;
+            @media(min-width: 500px){
+                &{
+                    font-size: 15px;
+                }
+            }
+            @media(min-width: 800px){
+                &{
+                    font-size: 17px;
+                }
+            }
+            @media(min-width: 1000px){
+                &{
+                    font-size: 20px;
+                }
+            }
+
+        }
     }     
     .sociales{
         @include flex-direccion(row);
         justify-content: space-evenly;
-        width: 25vw;
+        
     }
     .sociales a i{
         transition: transform 0.5s;
         color: black;
         &:hover{
-           transform: scale(1.5);
-           text-shadow: 10px 4px 10px white;
+           transform: scale(1.5);     
+           text-shadow: 10px 4px 15px white;
              }
-    
+        font-size: 25px;
+        padding: 5px;
+        @media(min-width: 500px){
+            &{
+                font-size: 30px;
+            }
+        }
+        @media(min-width: 800px){
+            &{
+                font-size: 35px;
+                padding: 10px;
+            }
+        }
+        @media(min-width: 1000px){
+            &{
+                font-size: 45px;
+                padding: 15px;
+            }
+        }
        }
+     
 }
