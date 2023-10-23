@@ -1,16 +1,59 @@
 section{
-    .fotoHome{
-        height: $alto - 10%;
-        width: 75vw;
-        margin-bottom: 15px;
-        margin-top: 10px;
+     .fotoHome{
+        height: 170px;
+        width: 280px;
+        margin-bottom: 20px;
+        margin-top: 20px;
         border-radius: 10px;
         box-shadow: $sombra;
+        @media(min-width: 450px){
+            &{
+              height: 230px;
+              width: 360px;
+            }
+        }
+        @media(min-width: 500px){
+            &{
+              height: 260px;
+              width: 380px;
+            }
+        }
+        @media(min-width: 600px){
+            &{
+              height: 55vh;
+              width: 70vw;
+            }
+        }
+        @media(min-width: 700px){
+            &{
+              height: 65vh;
+              width: 70vw;
+            }
+        }
+        @media(min-width: 800px){
+            &{
+              height: 80vh;
+              width: 75vw;
+            }
+        }
       }
     
     .imagen_index{
         @include flex-direccion(row);
-        justify-content: center;
+        justify-content: center; 
+        align-items: center;
+        height: 66vh;
+        @media(min-width: 600px){
+            &{
+                height: 75vh;
+            }
+        }
+        @media(min-width: 700px){
+            &{
+             height: 80vh;
+               }
+            }
+    }
     }
      
-}
+
