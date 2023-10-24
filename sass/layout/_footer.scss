@@ -4,7 +4,7 @@ footer{
         @include flex-direccion(column);
         align-items: center;
         justify-content: center;
-        height: 20vh;
+        height: auto;
         width: auto;
         background-image: url(../assets/images/textura_footer.webp);
         h1{
@@ -34,6 +34,7 @@ footer{
         
     }
     .sociales a i{
+        margin-top: 30px;
         transition: transform 0.5s;
         color: black;
         &:hover{

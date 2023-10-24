@@ -63,59 +63,54 @@ H1 {
   text-align: center;
 }
 
-section .fotoHome {
-  height: 170px;
-  width: 280px;
+body {
+  display: grid;
+  min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+#section_index {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+#section_index .fotoHome {
+  width: 100%;
   margin-bottom: 20px;
   margin-top: 20px;
   border-radius: 10px;
   box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
 }
-@media (min-width: 450px) {
-  section .fotoHome {
-    height: 230px;
-    width: 360px;
-  }
-}
-@media (min-width: 500px) {
-  section .fotoHome {
-    height: 260px;
-    width: 380px;
-  }
-}
-@media (min-width: 600px) {
-  section .fotoHome {
-    height: 55vh;
-    width: 70vw;
-  }
-}
-@media (min-width: 700px) {
-  section .fotoHome {
-    height: 65vh;
-    width: 70vw;
-  }
-}
-@media (min-width: 800px) {
-  section .fotoHome {
-    height: 80vh;
-    width: 75vw;
-  }
-}
-section .imagen_index {
+#section_index .imagen_index {
+  margin: 10px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 66vh;
 }
 @media (min-width: 600px) {
-  section .imagen_index {
-    height: 75vh;
+  #section_index .imagen_index {
+    margin: 20px;
   }
 }
 @media (min-width: 700px) {
-  section .imagen_index {
-    height: 80vh;
+  #section_index .imagen_index {
+    margin: 30px;
+  }
+}
+@media (min-width: 800px) {
+  #section_index .imagen_index {
+    margin: 35px;
+  }
+}
+@media (min-width: 900px) {
+  #section_index .imagen_index {
+    margin: 40px;
+  }
+}
+@media (min-width: 1000px) {
+  #section_index .imagen_index {
+    margin: 50px;
   }
 }
 
@@ -466,7 +461,7 @@ footer .pie {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: auto;
   width: auto;
   background-image: url(../assets/images/textura_footer.webp);
 }
@@ -495,6 +490,7 @@ footer .sociales {
   justify-content: space-evenly;
 }
 footer .sociales a i {
+  margin-top: 30px;
   transition: transform 0.5s;
   color: black;
   font-size: 25px;
